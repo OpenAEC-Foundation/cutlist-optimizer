@@ -5,7 +5,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    open: true
+    open: true,
+    fs: {
+      // Allow serving files from the entire drive
+      allow: ['..']
+    }
+  },
+  resolve: {
+    preserveSymlinks: true
   },
   build: {
     outDir: 'dist',
