@@ -45,6 +45,25 @@ htmlcov/
 Thumbs.db
 .DS_Store
 
-# Local config (keep templates)
+# Local config
 config.local.json
 secrets.json
+
+# === LOCAL/PRIVATE FILES ===
+# Deploy scripts (contain server IPs)
+deploy/
+deploy-to-hetzner.bat
+
+# Local start scripts (contain local paths)
+start-dev.bat
+start-backend.bat
+
+# Session handoffs and status files
+SESSION_HANDOFF.md
+STATUS.md
+STATUS_*.md
+CLAUDE.md
+MCP_PROJECT_INSTRUCTIONS.md
+
+# Test files
+test_*.csv
